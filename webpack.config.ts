@@ -1,9 +1,8 @@
-import * as path from 'path';
+import * as path from "path";
 import HtmlWebpackPlugin from "html-webpack-plugin";
+import webpack from "webpack";
 
-import 'webpack-dev-server';
-
-export default {
+const configuration: webpack.Configuration = {
   entry: "./src/index.ts",
   mode: "development",
   module: {
@@ -22,9 +21,15 @@ export default {
     filename: "[name].[contenthash].js",
     path: path.resolve(__dirname, "./build"),
   },
+  devtool: "source-map",
+  optimization: {
+    // minimize: true,
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "./src/index.html"),
     }),
   ],
 };
+
+export default configuration;
