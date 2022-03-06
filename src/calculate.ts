@@ -1,3 +1,3 @@
-export function calculateRamdom(){
+export function calculateRamdom() {
   return Math.random();
 }

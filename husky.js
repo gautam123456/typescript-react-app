@@ -1,5 +1,5 @@
 export default {
   hooks: {
-    'pre-commit': 'pretty-quick --staged',
+    "pre-commit": "pretty-quick --staged",
   },
 };

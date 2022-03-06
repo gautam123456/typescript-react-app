@@ -6,6 +6,9 @@
   "scripts": {
     "dev": "webpack-dev-server --open",
     "build": "node node_modules/.bin/webpack --mode production",
+    "format": "run-s --continue-on-error format:*",
+    "format:eslint": "yarn lint:eslint --fix",
+    "format:prettier": "prettier --write .",
     "lint": "run-s --continue-on-error lint:*",
     "lint:eslint": "eslint . --ext .js,.jsx,.ts,.tsx --max-warnings 0 --format codeframe",
     "lint:prettier": "prettier --list-different .",
