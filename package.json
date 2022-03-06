@@ -12,6 +12,7 @@
     "lint": "run-s --continue-on-error lint:*",
     "lint:eslint": "eslint . --ext .js,.jsx,.ts,.tsx --max-warnings 0 --format codeframe",
     "lint:prettier": "prettier --list-different .",
+    "pretest": "yarn format && yarn build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
