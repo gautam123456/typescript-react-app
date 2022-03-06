@@ -1,0 +1,26 @@
+env:
+  browser: true
+
+extends:
+  - eslint:recommended
+  - plugin:import/recommended
+  - plugin:import/typescript
+  - plugin:@typescript-eslint/eslint-recommended
+  - plugin:@typescript-eslint/recommended
+
+ignorePatterns:
+  - build/
+  - "*.module.css.d.ts"
+
+parserOptions:
+  ecmaVersion: 2015
+  # Enables linting with type checking. Consumers might have to redefine this if
+  # the config filename differs.
+  # See https://github.com/typescript-eslint/typescript-eslint/blob/master/docs/getting-started/linting/TYPED_LINTING.md
+  project:
+    - ./tsconfig.json
+
+rules:
+  # Disallow the use of `console`
+  # https://eslint.org/docs/rules/no-console
+  no-console: error
