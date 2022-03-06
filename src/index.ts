@@ -10,6 +10,4 @@ import { calculateRamdom } from "./calculate";
   );
   header.appendChild(text);
   root.appendChild(header);
-  // eslint-disable-next-line no-console
-  console.log(root);
 })();
