@@ -22,9 +22,6 @@ const configuration: webpack.Configuration = {
     path: path.resolve(__dirname, "./build"),
   },
   devtool: "source-map",
-  optimization: {
-    // minimize: true,
-  },
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "./src/index.html"),
