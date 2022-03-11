@@ -8,8 +8,7 @@ import { calculateRamdom } from "./calculate";
   const text = document.createTextNode(
     "Hello World : Random no - " + calculateRamdom()
   );
+
   header.appendChild(text);
   root.appendChild(header);
-  // eslint-disable-next-line no-console
-  console.log(root);
 })();
