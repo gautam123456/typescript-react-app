@@ -24,4 +24,4 @@ parserOptions:
 rules:
   # Disallow the use of `console`
   # https://eslint.org/docs/rules/no-console
-  no-console: error
+  # no-console: error
