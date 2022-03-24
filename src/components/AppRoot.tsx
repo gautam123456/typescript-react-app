@@ -1,7 +1,11 @@
-import React from 'react'
+import React from "react";
+import { ModalWrapper } from "./ModalWrapper";
 
 export const AppRoot = () => {
   return (
-    <div>AppRoot</div>
-  )
-}
+    <div onClick={() => console.log("Handler in hirarchy")}>
+      <div>AppRoot</div>
+      <ModalWrapper />
+    </div>
+  );
+};

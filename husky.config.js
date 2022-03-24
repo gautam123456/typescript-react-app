@@ -1,5 +1,5 @@
-module.exports = {
-  hooks: {
-    'pre-commit': 'pretty-quick --staged',
-  },
-};
+// module.exports = {
+//   hooks: {
+//     "pre-commit": "pretty-quick --staged",
+//   },
+// };
